@@ -74,14 +74,14 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={ref} className="py-32 relative">
+    <section id="projects" ref={ref} className="py-40 md:py-52 relative">
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "var(--border)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="proj-header flex items-center gap-4 mb-6">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div className="proj-header flex items-center gap-4 mb-8">
           <span
             className="text-xs font-mono tracking-[0.25em] uppercase"
             style={{ color: "var(--accent)" }}
@@ -92,7 +92,7 @@ export default function Projects() {
         </div>
 
         <h2
-          className="proj-header font-bold mb-16"
+          className="proj-header font-bold mb-20"
           style={{
             fontSize: "clamp(1.8rem, 3.5vw, 3rem)",
             letterSpacing: "-0.02em",
@@ -103,7 +103,7 @@ export default function Projects() {
           <span style={{ color: "var(--accent)" }}>built & researched</span>
         </h2>
 
-        <div className="proj-grid space-y-6">
+        <div className="proj-grid space-y-8">
           {projects.map((p, i) => (
             <div
               key={i}
@@ -119,7 +119,7 @@ export default function Projects() {
               onMouseEnter={() => setActive(i)}
               onMouseLeave={() => setActive(null)}
             >
-              <div className="p-8">
+              <div className="p-10 md:p-14">
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   {/* Number */}
                   <div

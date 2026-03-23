@@ -55,10 +55,10 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="py-32 relative">
+    <section id="about" ref={ref} className="py-40 md:py-52 relative">
       {/* Section label */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="about-reveal flex items-center gap-4 mb-16">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div className="about-reveal flex items-center gap-4 mb-20">
           <span
             className="text-xs font-mono tracking-[0.25em] uppercase"
             style={{ color: "var(--accent)" }}
@@ -68,11 +68,11 @@ export default function About() {
           <div className="flex-1 h-px" style={{ background: "var(--border)" }} />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-24 items-start">
           {/* Text block */}
           <div>
             <h2
-              className="about-reveal font-bold mb-8"
+              className="about-reveal font-bold mb-12"
               style={{
                 fontSize: "clamp(2rem, 4vw, 3.5rem)",
                 lineHeight: 1.1,
@@ -121,11 +121,11 @@ export default function About() {
           {/* Right: stats + identity tags */}
           <div>
             {/* Stats */}
-            <div className="stats-grid grid grid-cols-2 gap-4 mb-10">
+            <div className="stats-grid grid grid-cols-2 gap-6 mb-14">
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="stat-card rounded-sm p-6"
+                  className="stat-card rounded-sm p-8"
                   style={{
                     background: "var(--surface)",
                     border: "1px solid var(--border)",

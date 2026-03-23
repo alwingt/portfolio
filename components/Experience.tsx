@@ -69,15 +69,15 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" ref={ref} className="py-32 relative">
+    <section id="experience" ref={ref} className="py-40 md:py-52 relative">
       {/* Subtle horizontal rule / section border */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "var(--border)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="exp-header flex items-center gap-4 mb-16">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div className="exp-header flex items-center gap-4 mb-20">
           <span
             className="text-xs font-mono tracking-[0.25em] uppercase"
             style={{ color: "var(--accent)" }}
@@ -94,7 +94,7 @@ export default function Experience() {
             style={{ background: "var(--border)", left: "1px" }}
           />
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {experiences.map((exp, i) => (
               <div
                 key={i}
@@ -111,7 +111,7 @@ export default function Experience() {
                 />
 
                 <div
-                  className="rounded-sm p-8 transition-colors duration-300 hover:border-accent/50 group"
+                  className="rounded-sm p-10 md:p-12 transition-colors duration-300 hover:border-accent/50 group"
                   style={{
                     background: "var(--surface)",
                     border: "1px solid var(--border)",

@@ -55,7 +55,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" ref={ref} className="py-32 relative">
+    <section id="contact" ref={ref} className="py-40 md:py-52 relative">
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "var(--border)" }}
@@ -81,8 +81,8 @@ export default function Contact() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-6">
-        <div className="contact-el flex items-center gap-4 mb-16">
+      <div className="relative max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div className="contact-el flex items-center gap-4 mb-20">
           <span
             className="text-xs font-mono tracking-[0.25em] uppercase"
             style={{ color: "var(--accent)" }}
@@ -94,7 +94,7 @@ export default function Contact() {
 
         <div className="max-w-2xl">
           <h2
-            className="contact-el font-bold mb-6"
+            className="contact-el font-bold mb-10"
             style={{
               fontSize: "clamp(2.5rem, 6vw, 5rem)",
               lineHeight: 1.05,
@@ -108,7 +108,7 @@ export default function Contact() {
           </h2>
 
           <p
-            className="contact-el text-base leading-relaxed mb-12"
+            className="contact-el text-base md:text-lg leading-relaxed mb-14"
             style={{ color: "var(--muted)" }}
           >
             Open to internships, research collaborations, competitions, or just
@@ -116,7 +116,7 @@ export default function Contact() {
             I&apos;m based in Kochi, India.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {links.map((l) => (
               <a
                 key={l.label}

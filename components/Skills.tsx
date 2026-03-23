@@ -95,14 +95,14 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={ref} className="py-32 relative">
+    <section id="skills" ref={ref} className="py-40 md:py-52 relative">
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "var(--border)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="skills-header flex items-center gap-4 mb-6">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-20">
+        <div className="skills-header flex items-center gap-4 mb-8">
           <span
             className="text-xs font-mono tracking-[0.25em] uppercase"
             style={{ color: "var(--accent)" }}
@@ -113,7 +113,7 @@ export default function Skills() {
         </div>
 
         <h2
-          className="skills-header font-bold mb-16"
+          className="skills-header font-bold mb-20"
           style={{
             fontSize: "clamp(1.8rem, 3.5vw, 3rem)",
             letterSpacing: "-0.02em",
@@ -123,11 +123,11 @@ export default function Skills() {
           <span style={{ color: "var(--accent)" }}>trade</span>
         </h2>
 
-        <div className="skills-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="skills-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillGroups.map((group) => (
             <div
               key={group.category}
-              className="skill-group rounded-sm p-6"
+              className="skill-group rounded-sm p-8 md:p-10"
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
@@ -189,7 +189,7 @@ export default function Skills() {
 
         {/* Education callout */}
         <div
-          className="skills-header mt-12 rounded-sm p-8 flex flex-col md:flex-row md:items-center gap-6"
+          className="skills-header mt-16 rounded-sm p-10 md:p-12 flex flex-col md:flex-row md:items-center gap-6"
           style={{
             background: "color-mix(in srgb, var(--accent) 5%, var(--surface))",
             border: "1px solid color-mix(in srgb, var(--accent) 20%, transparent)",

@@ -184,9 +184,9 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-8 md:px-20 pt-36">
         {/* Tag */}
-        <div className="hero-tag flex items-center gap-3 mb-8">
+        <div className="hero-tag flex items-center gap-3 mb-12">
           <span
             className="inline-block w-2 h-2 rounded-full"
             style={{ background: "var(--accent)", boxShadow: "0 0 8px var(--accent)" }}
@@ -200,12 +200,12 @@ export default function Hero() {
         </div>
 
         {/* Name */}
-        <h1 className="font-bold leading-none mb-6 select-none">
+        <h1 className="font-bold leading-none mb-10 select-none">
           <div className="hero-line-1 overflow-hidden">
             <div
               className="flex flex-wrap"
               style={{
-                fontSize: "clamp(2.8rem, 8vw, 8rem)",
+                fontSize: "clamp(3rem, 9vw, 10rem)",
                 color: "var(--text)",
                 letterSpacing: "-0.02em",
               }}
@@ -221,7 +221,7 @@ export default function Hero() {
             <div
               className="flex flex-wrap"
               style={{
-                fontSize: "clamp(3.5rem, 11vw, 11rem)",
+                fontSize: "clamp(4rem, 14vw, 14rem)",
                 letterSpacing: "-0.03em",
                 WebkitTextStroke: "1px var(--muted)",
                 color: "transparent",
@@ -239,7 +239,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p
-          className="hero-sub text-base md:text-lg font-light mb-10 max-w-xl"
+          className="hero-sub text-base md:text-xl font-light mb-14 max-w-2xl"
           style={{ color: "var(--muted)", lineHeight: 1.7 }}
         >
           AEI undergrad at Rajagiri, Kochi — building at the intersection of
